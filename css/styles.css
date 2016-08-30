@@ -23,7 +23,7 @@ header {
   text-align: center;
 }
 
-#name {
+#name1 {
   text-align: center;
   font-size: 45px;
   text-decoration-color: transparent;
@@ -53,17 +53,10 @@ header {
 #content1 {
 
 }*/
-#about {
+#bio {
   background-color: #F0F8FF;
   text-align: center;
   padding-top: 10%;
-}
-#bio {
-  z-index: 1000;
-  top: 50%;
-  margin-top: 0px;
-  width: 360px;
-  margin: 0 auto;
 }
 
 .bio-p {
@@ -71,12 +64,24 @@ header {
   margin-top: 20px;
 }
 
-#bio img {
-  border: solid gray 10px;
+bio img {
+  border: solid gray 20px;
   align-items: center;
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
 }
+
+.picture {
+   padding-top: 70px;
+}
+/*#bio {
+  z-index: 1000;
+  top: 50%;
+  margin-top: 0px;
+  width: 360px;
+  margin: 0 auto;
+}
+
 
 
 /*CONTACT*/
@@ -123,13 +128,14 @@ header {
 #projects {
     background-color: #4B5B6E;
     text-align: center;
-    
+
 }
 
 #interest {
   background-color: gray;
   font-size: 20px;
-  margin-top: 20px;;
+  margin-top: 20px;
+  text-align: center;
 }
 
 #project-img {
@@ -144,13 +150,6 @@ header {
   width:250px;
   padding: 20px;
 }
-/*#more_projects  {
-  font-family: 'Poiret One', cursive;
-  text-align: center;
-  font-size: 48px;
-  text-decoration: none;
-  color: black;
-}*/
 
 
 /*CONTACT FORM*/
@@ -198,7 +197,7 @@ header {
     resize:none;
     overflow: hidden;
 }
-/*.form-styling input[type="button"],
+.form-styling input[type="button"],
 .form-styling input[type="submit"]{
     -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
@@ -217,7 +216,7 @@ header {
 .form-styling input[type="button"]:hover,
 .form-styling input[type="submit"]:hover {
     background-color:#34CACA;
-}*/
+}
 
 
 @media (max-width: 550px) {
