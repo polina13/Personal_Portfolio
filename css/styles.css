@@ -1,4 +1,251 @@
 body {
-  font-family: 'Tangerine', serif;
+  margin: 0;
+  font:normal 65% Arial, Helvetica, sans-serif;
+}
+
+.page-title {
+    font-family: 'Poiret One', cursive;
+    font-size: 38px;
+}
+p {
+    padding: 0 0.5em;
+    margin: 0;
+}
+
+header {
+  position: absolute;
+  top: 50%;
+  width: 600px;
+  height: 300px;
+  left: 50%;
+  margin-top:-300px;
+  margin-left: -300px;
+  text-align: center;
+}
+
+#name {
+  text-align: center;
+  font-size: 45px;
+  text-decoration-color: transparent;
+}
+/*.fixed {
+    position:fixed;
+    top: 0;
+    left: 2%;
+}
+.fixed li{
+  margin: 0 auto;
+  color: black;
+  opacity: 1;
+}
+.fixed a {
+  background-color: #797979;
+  color: black;
+  opacity: 1;
+  opacity: .8;
+  padding:0;
+}*/
+/*#name-title {
+  font-size: 52px;
+  color: #D7DACF;
+  font-family: 'Megrim', cursive;;
+}
+#content1 {
+
+}*/
+#about {
+  background-color: #F0F8FF;
+  text-align: center;
+  padding-top: 10%;
+}
+#bio {
+  z-index: 1000;
+  top: 50%;
+  margin-top: 0px;
+  width: 360px;
+  margin: 0 auto;
+}
+
+.bio-p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#bio img {
+  border: solid gray 10px;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+}
+
+
+/*CONTACT*/
+#contact {
+    background-color: #CCCCCC;
+    text-align: center;
+}
+.nav-bar li {
+  display: inline;
+  font-size: 20px;
+  padding: 10px;
+}
+.nav-bar li a {
+  text-decoration: none;
+  border: white 2px solid;
+  padding: 5px;
+  color: #5F9EA0;
+  font-family: 'Poiret One', cursive;
+}
+.nav-bar li a:hover {
+  color: #4e9cb5;
+}
+#header-intro {
+  font-size: 18px;
+  color: #800000;
+}
+
+#form-div, #contact-info {
+  z-index: 1000;
+  top: 50%;
+  margin-top: 0px;
+  text-align: center;
+}
+#contact-info {
+  padding-top: 20px;
+  font-size: 18px;
+}
+#contact-info p a img {
+  padding-left: 10px;
+}
+
+/*projects*/
+
+#projects {
+    background-color: #4B5B6E;
+    text-align: center;
+    
+}
+
+#interest {
+  background-color: gray;
+  font-size: 20px;
+  margin-top: 20px;;
+}
+
+#project-img {
+  z-index: 1000;
+  margin-top: 50px;
+  text-align: center;
+  height: 600px;
+  width: 880px;
+  margin: 50px auto;
+}
+#project-img a img {
+  width:250px;
+  padding: 20px;
+}
+/*#more_projects  {
+  font-family: 'Poiret One', cursive;
+  text-align: center;
   font-size: 48px;
+  text-decoration: none;
+  color: black;
+}*/
+
+
+/*CONTACT FORM*/
+.form-styling{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 500px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+
+.form-styling h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 48px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+.form-styling input[type="text"],
+.form-styling input[type="email"],
+.form-styling textarea
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+.form-styling textarea{
+    resize:none;
+    overflow: hidden;
+}
+/*.form-styling input[type="button"],
+.form-styling input[type="submit"]{
+    -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    background-color: #4e9cb5;
+    border: 1px solid #27A0A0;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.form-styling input[type="button"]:hover,
+.form-styling input[type="submit"]:hover {
+    background-color:#34CACA;
+}*/
+
+
+@media (max-width: 550px) {
+  .form-styling {
+    width: 300px;
+  }
+  #project-img a img {
+    width:150px;
+    padding: 5px;
+  }
+  #project-img {
+    width: 360px;
+    margin-left: -100px;
+  }
+}
+
+@media(max-width: 800px) {
+  #project-img a img {
+    width:200px;
+    padding: 5px;
+  }
+  #project-img {
+    width: 600px;
+  }
+}
+
+#footer{
+  height: 100px;
+  text-align: center;
+  font-size: 20px;
 }
