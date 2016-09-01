@@ -8,16 +8,16 @@
 
 body {
   margin: 0;
-  font:normal 65% Arial, Helvetica, sans-serif;
+  /*font:normal 65% Arial, Helvetica, sans-serif;*/
 }
 
 .page-title {
-    font-family: 'Poiret One', cursive;
-    font-size: 38px;
+    /*font-family: 'Poiret One', cursive;*/
+    font-size: 40px;
 }
 
 p {
-    padding: 0 0.5em;
+    padding: 0 0.7em;
     margin: 0;
 }
 
@@ -34,8 +34,8 @@ header {
 
 #name1 {
   text-align: center;
-  font-size: 45px;
-  text-decoration-color: transparent;
+  font-size: 55px;
+  /*more stuff in here. Try to make it moving and flashing or something interesting*/
 }
 
 #bio {
@@ -46,20 +46,22 @@ header {
 
 .bio-p {
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 75px;
   padding: 10px;
-
-}
-
-bio img {
-  border: solid gray 20px;
-  align-items: center;
-  width: 250px;
-  height: 250px;
+  margin-bottom: 60px;
 }
 
 .picture {
-   padding-top: 60px;
+  float:left;
+  margin: 50px 20px 20px 20px;
+}
+
+.img-circle {
+  border: solid gray 5px;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  margin-top: 30px;
 }
 
 /*CONTACT*/
@@ -69,27 +71,27 @@ bio img {
 }
 .nav-bar li {
   display: inline;
-  font-size: 20px;
-  padding: 30px;
+  padding: 20px;
 
 }
 .nav-bar li a {
   text-decoration: none;
-  border: white 2px solid;
+  border: black 3px solid;
   padding: 10px;
   /*color: #5F9EA0;*/
-  font-family: 'Poiret One', cursive;
+  /*font-family: 'Poiret One', cursive;*/
 }
 .nav-bar li a:hover {
   /*color: #4e9cb5;*/
 }
 #header-intro {
-  font-size: 18px;
+  font-size: 20px;
   color: #800000;
 }
 
 .menu {
-  margin-top: 30px;
+  margin-top: 20px;
+  font-size: 25px;
 }
 
 #form-div, #contact-info {
@@ -99,7 +101,7 @@ bio img {
   text-align: center;
 }
 #contact-info {
-  padding-top: 10px;
+  padding-bottom: 20px;
   font-size: 18px;
 }
 #contact-info p a img {
@@ -111,7 +113,7 @@ bio img {
 #projects {
   /*background-color:  #e6e6ff;*/
   text-align: center;
-  margin-top: -10px;
+  margin-bottom: 220px;
 }
 
 #interest {
@@ -119,6 +121,7 @@ bio img {
   font-size: 20px;
   text-align: center;
   padding: 10px;
+  margin-bottom: 60px;
 }
 
 #project-img {
