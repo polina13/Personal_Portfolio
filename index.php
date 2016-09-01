@@ -1,3 +1,54 @@
+<?php
+
+    // Only process POST reqeusts.
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get the form fields and remove whitespace.
+        $name = strip_tags(trim($_POST["name"]));
+				$name = str_replace(array("\r","\n"),array(" "," "),$name);
+        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $message = trim($_POST["message"]);
+
+        // Check that data was sent to the mailer.
+        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            // Set a 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Oops! There was a problem with your submission. Please complete the form and try again.";
+            exit;
+        }
+
+        // Set the recipient email address.
+        // FIXME: Update this to your desired email address.
+        $recipient = "polina.nenchev@gmail.com;
+
+        // Set the email subject.
+        $subject = "New contact from $name";
+
+        // Build the email content.
+        $email_content = "Name: $name\n";
+        $email_content .= "Email: $email\n\n";
+        $email_content .= "Message:\n$message\n";
+
+        // Build the email headers.
+        $email_headers = "From: $name <$email>";
+
+        // Send the email.
+        if (mail($recipient, $subject, $email_content, $email_headers)) {
+            // Set a 200 (okay) response code.
+            http_response_code(200);
+            echo "Thank You! Your message has been sent.";
+        } else {
+            // Set a 500 (internal server error) response code.
+            http_response_code(500);
+            echo "Oops! Something went wrong and we couldn't send your message.";
+        }
+
+    } else {
+        // Not a POST request, set a 403 (forbidden) response code.
+        http_response_code(403);
+        echo "There was a problem with your submission, please try again.";
+    }
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -45,21 +96,21 @@
             </h4></a></p>
 
       <div class="row" id="project-img">
-          <div class="col-md-6"><h2>Coffee Lovers</h2>
+          <div class="col-md-4"><h2>Coffee Lovers</h2>
               <h4>Click on picture to learn more about the project</h4>
               <a href="https://github.com/polina13/CoffeeShop.git"><img src="img/coffee.png"></a>
           </div>
-          <div class="col-md-6"><h2>FitMap</h2>
+          <div class="col-md-4"><h2>FitMap</h2>
               <h4>Click on picture to learn more about the project</h4>
               <a href="https://github.com/polina13/FitMap.git"><img src="img/fitMap.png"></a>
           </div>
-          <div class="col-md-6"><h2>Q&A Message Board</h2>
+          <div class="col-md-4"><h2>Q&A Message Board</h2>
               <h4>Click on picture to learn more about the project</h4>
               <!--  HOW TO ADD PARAGRAPH THAT WILL BE WRAPPED ?? Ask-->
               <a href="https://github.com/polina13/Q-A-MessageBlog.git"><img src="img/q&a.png"></a>
           </div>
           <!--  Meal Tracker -->
-          <div class="col-md-6"><h2>Meal Tracker</h2>
+          <div class="col-md-4"><h2>Meal Tracker</h2>
               <h4>Click on picture to learn more about the project</h4>
               <a href="https://github.com/polina13/mealTracker.git"><img src="img/q&a.png"></a>
           </div>
@@ -72,13 +123,14 @@
       <div id="form-div">
         <div class="form-styling">
           <h2>Get in Contact. Just fill this!</h2>
-            <div id="form-messages"></div>
-            <form id="ajax-contact" method="post" action="mailer.php">
-            <input type="text" name="name" id="name" placeholder="Name" required></input>
-            <input type="email" name="email" id="email" placeholder="Email" required></input>
-            <textarea placeholder="Message" name="message" id="message" required></textarea>
-            <button id="submit-button" type="submit">Submit</button>
-          </form>
+          <div id="messages"></div>
+          <form id="ajax-contact">
+            <form id="ajax-contact" method="post" action="index.php">
+              <input type="text" name="name" id="name" placeholder="Name" required></input>
+              <input type="email" name="email" id="email" placeholder="Email" required></input>
+              <textarea placeholder="Message" id="message" required></textarea>
+              <button id="submit-button" type="submit">Submit</button>
+            </form>
         </div>
       </div>
       <div id="contact-info">
@@ -92,8 +144,7 @@
     <div class="content" id="footer" data-stellar-background-ratio="1">
         <p>&#169;2016 Polina Nenchev </p>
     </div>
-     <script src="js/jquery-2.1.4.js"></script>
-    <!-- <script src="js/scripts.js"></script> -->
+    <script src="js/jquery-2.1.4.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
