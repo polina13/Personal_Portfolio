@@ -31,14 +31,9 @@
 
 <!-- Work/Interests -->
     <div class="content" id="interest">
-        <h4 class="page-title">Work/Interests <a href="PolinaNenchev_resume.pdf"><img src="img/resume.jpg"></a></h4>
+        <h4 class="page-title">Work/Interests/Resume <a href="PolinaNenchev_resume.pdf"><img src="img/resume.jpg"></a></h4>
 
         <p>Some of my interests are my family and my development career. I enjoy learnig new programming languages, going to meet ups, and developing personal projects in my free time. Taking the track Java/Javascript/Android made me more detailed-oriented and open more interests for me in this field. On the personal side, my family is my everything. If I had to describe myself with a few words. <strong> "Loving mother and wife, passionate developer, and experimental cooker."</strong></p>
-        <!-- <p>You can also checkout my resume where I have included some of my work experience and projects have worked on. <iframe src="pdf/PolinaNenchev_resume.pdf" width="100%" height="100%">
-This browser does not support PDFs. Please download the PDF to view it: <a href="pdf/PolinaNenchev_resume.pdf">Download PDF</a>
-</iframe></p> -->
-<!-- <embed src="pdf/PolinaNenchev_resume.pdf" width="800px" height="2100px" /> -->
-
     </div>
 <!-- PROJECTS -->
     <div class="content" id="projects">
@@ -77,11 +72,22 @@ This browser does not support PDFs. Please download the PDF to view it: <a href=
           <h2>Get in Contact. Just fill this!</h2>
             <div id="form-messages"></div>
             <form id="ajax-contact" method="post" action="mailer.php">
-            <input type="text" name="name" id="name" placeholder="Name" required></input>
-            <input type="email" name="email" id="email" placeholder="Email" required></input>
-            <textarea placeholder="Message" name="message" id="message" required></textarea>
-            <button id="submit-button" type="submit">Submit</button>
-          </form>
+              <div class="field">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+              </div>
+              <div class="field">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="field">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="field">
+                  <button type="submit">Send</button>
+              </div>
+            </form>
         </div>
       </div>
       <div id="contact-info">
