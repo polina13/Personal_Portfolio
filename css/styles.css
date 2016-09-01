@@ -8,11 +8,11 @@
 
 body {
   margin: 0;
-  /*font:normal 65% Arial, Helvetica, sans-serif;*/
+  font: "Arial Black", Gadget, sans-serif;
 }
 
 .page-title {
-    /*font-family: 'Poiret One', cursive;*/
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     font-size: 40px;
 }
 
@@ -24,17 +24,18 @@ p {
 header {
   position: absolute;
   top: 50%;
-  width: 600px;
-  height: 300px;
   left: 50%;
   margin-top:-300px;
   margin-left: -300px;
   text-align: center;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+
 }
 
 #name1 {
   text-align: center;
   font-size: 55px;
+  font-weight: bold;
   /*more stuff in here. Try to make it moving and flashing or something interesting*/
 }
 
@@ -53,7 +54,7 @@ header {
 
 .picture {
   float:left;
-  margin: 50px 20px 20px 20px;
+  margin: 60px 20px 20px 20px;
 }
 
 .img-circle {
@@ -64,11 +65,6 @@ header {
   margin-top: 30px;
 }
 
-/*CONTACT*/
-#contact {
-    /*background-color: #CCCCCC;*/
-    text-align: center;
-}
 .nav-bar li {
   display: inline;
   padding: 20px;
@@ -82,7 +78,7 @@ header {
   /*font-family: 'Poiret One', cursive;*/
 }
 .nav-bar li a:hover {
-  /*color: #4e9cb5;*/
+  color: #4e9cb5;
 }
 #header-intro {
   font-size: 20px;
@@ -90,22 +86,8 @@ header {
 }
 
 .menu {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 25px;
-}
-
-#form-div, #contact-info {
-  z-index: 1000;
-  top: 50%;
-  margin-top: 0px;
-  text-align: center;
-}
-#contact-info {
-  padding-bottom: 20px;
-  font-size: 18px;
-}
-#contact-info p a img {
-  padding-left: 10px;
 }
 
 /*projects*/
@@ -114,6 +96,7 @@ header {
   /*background-color:  #e6e6ff;*/
   text-align: center;
   margin-bottom: 220px;
+  font-size: 20px;
 }
 
 #interest {
@@ -137,6 +120,26 @@ header {
   padding: 20px;
 }
 
+/*CONTACT*/
+#contact {
+    /*background-color: #CCCCCC;*/
+    text-align: center;
+    font-size: 20px;
+}
+
+#form-div, #contact-info {
+  z-index: 1000;
+  top: 50%;
+  margin-top: 0px;
+  text-align: center;
+}
+#contact-info {
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+#contact-info p a img {
+  padding-left: 10px;
+}
 
 /*CONTACT FORM*/
 .form-styling{
@@ -155,7 +158,7 @@ header {
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     /*color: #797979;*/
-    font-size: 48px;
+    font-size: 28px;
     font-weight: 100;
     padding: 10px;
     margin: -30px -30px 30px -30px;
@@ -187,7 +190,7 @@ header {
     -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
     box-shadow: inset 0px 1px 0px 0px #45D6D6;
-    /*background-color: #4e9cb5;*/
+    background-color: #4e9cb5;
     border: 1px solid #27A0A0;
     display: inline-block;
     cursor: pointer;
@@ -200,7 +203,7 @@ header {
 }
 .form-styling input[type="button"]:hover,
 .form-styling input[type="submit"]:hover {
-    /*background-color:#34CACA;*/
+background-color:#34CACA;
 }
 
 
@@ -231,5 +234,5 @@ header {
 #footer{
   height: 100px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
 }
