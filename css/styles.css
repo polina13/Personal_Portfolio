@@ -9,6 +9,7 @@
 body {
   margin: 0;
   font: "Arial Black", Gadget, sans-serif;
+  background-color: #DDDAD9
 }
 
 .page-title {
@@ -36,11 +37,10 @@ header {
   text-align: center;
   font-size: 55px;
   font-weight: bold;
-  /*more stuff in here. Try to make it moving and flashing or something interesting*/
+  color: #3F7FBF;
 }
 
 #bio {
-  /*background-color: #CCCCCC;*/
   text-align: center;
   padding-top: 10%;
 }
@@ -74,33 +74,31 @@ header {
   text-decoration: none;
   border: black 3px solid;
   padding: 10px;
-  /*color: #5F9EA0;*/
-  /*font-family: 'Poiret One', cursive;*/
+  color: #063A02;
 }
 .nav-bar li a:hover {
   color: #4e9cb5;
 }
 #header-intro {
-  font-size: 20px;
-  color: #800000;
+  font-size: 30px;
+  color:  #057E3E;
 }
 
 .menu {
   margin-top: 30px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 /*projects*/
 
 #projects {
-  /*background-color:  #e6e6ff;*/
   text-align: center;
   margin-bottom: 220px;
   font-size: 20px;
 }
 
 #interest {
-  /*background-color: #8c7373;*/
+  background-color: #55AFAF;
   font-size: 20px;
   text-align: center;
   padding: 10px;
@@ -122,7 +120,7 @@ header {
 
 /*CONTACT*/
 #contact {
-    /*background-color: #CCCCCC;*/
+    background-color:  #55AFAF;
     text-align: center;
     font-size: 20px;
 }
