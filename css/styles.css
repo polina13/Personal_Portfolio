@@ -105,7 +105,7 @@ header {
   margin-bottom: 60px;
 }
 
-#project-img {
+/*#project-img {
   z-index: 1000;
   text-align: center;
   height: 600px;
@@ -116,6 +116,9 @@ header {
 #project-img a img {
   width:250px;
   padding: 20px;
+}*/
+.navbar-brand {
+  text-align: center;
 }
 
 /*CONTACT*/
