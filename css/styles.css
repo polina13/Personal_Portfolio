@@ -93,7 +93,7 @@ header {
 
 #projects {
   text-align: center;
-  margin-bottom: 220px;
+ 
   font-size: 20px;
 }
 
@@ -117,9 +117,7 @@ header {
   width:250px;
   padding: 20px;
 }*/
-.navbar-brand {
-  text-align: center;
-}
+
 
 /*CONTACT*/
 #contact {
