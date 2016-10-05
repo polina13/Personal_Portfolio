@@ -4,6 +4,7 @@
 
 ## Description
 This is my personal portfolio website that was built to illustrate how I am and also some of the projects I have created.
+  * Link to review portfolio: https://polina13.github.io/Personal_Portfolio/
 
 ## Technologies Used
 
