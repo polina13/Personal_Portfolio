@@ -34,9 +34,10 @@ header {
 
 #name1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: bold;
-  color: #3F7FBF;
+  color:#000066;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #bio {
@@ -46,36 +47,36 @@ header {
 
 .bio-p {
   font-size: 17px;
-  margin-top: 75px;
+  margin-top: 65px;
   padding: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   font-family: 'Open Sans', sans-serif;
 }
 
 .picture {
   float:left;
   margin: 80px 20px 20px 20px;
-  border: solid gray 5px;
+  border: solid gray 7px;
 }
 
 .nav-bar li {
   display: inline;
-  padding: 20px;
+  padding: 25px;
 
 }
 .nav-bar li a {
   text-decoration: none;
   border: black 3px solid;
   padding: 10px;
-  color: #063A02;
+  color: #666600;
 }
 .nav-bar li a:hover {
-  color: #4e9cb5;
+  color:#000066;
 }
 
 #header-intro {
-  font-size: 30px;
-  color:  #057E3E;
+  font-size: 25px;
+  color:#ff9c33;
 }
 
 .menu {
@@ -85,10 +86,14 @@ header {
 
 /*projects*/
 
-.projectlist {
-  font-size: 13px;
+.projectlist li a {
+  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  color: #666600;
+}
 
+.projectlist li a p {
+  font-size: 13px;
 }
 
 #projects {
@@ -110,7 +115,7 @@ header {
 }
 
 .interst_text {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 /*CONTACT*/
