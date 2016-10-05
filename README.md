@@ -3,7 +3,8 @@
 #### By Polina Nenchev
 
 ## Description
-This is my personal portfolio website that was built to illustrate how I am and also some of the projects I have created.
+This is my personal portfolio website that was built to illustrate how I am and also some of the projects I have created. The website can be viewed online at https://polina13.github.io/Personal_Portfolio/.
+
 
 ## Technologies Used
 
