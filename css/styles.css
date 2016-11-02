@@ -46,7 +46,7 @@ header {
 }
 
 .bio-p {
-  font-size: 17px;
+  font-size: 14px;
   margin-top: 65px;
   padding: 10px;
   margin-bottom: 70px;
@@ -55,7 +55,7 @@ header {
 
 .picture {
   float:left;
-  margin: 80px 20px 20px 20px;
+  margin: 75px 15px 15px 15px;
   border: solid gray 7px;
 }
 
@@ -96,6 +96,11 @@ header {
   font-size: 13px;
 }
 
+p {
+  font-family: 'Open Sans', sans-serif;
+
+}
+
 #projects {
   text-align: center;
   font-size: 20px;
@@ -115,7 +120,8 @@ header {
 }
 
 .interst_text {
-  font-size: 16px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*CONTACT*/
